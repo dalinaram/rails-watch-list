@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+      <h1><%= @movie.name %></h1>
+      <table class="table table-bordered">
+        <tbody>
+          <tr>
+            <th scope="row">Name</th>
+            <td><%= @movie.name %></td>
+          </tr>
+          <tr>
+            <th scope="row">Overview</th>
+            <td><%= @movie.overview %></td>
+          </tr>
+          <tr>
+            <th scope="row">Poster_url</th>
+            <td><%= @movie.poster_url %></td>
+          </tr>
+          <tr>
+            <th scope="row">Rating</th>
+            <td><%= @movie.rating %></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <%= link_to "See all movies", movies_path %>
+    </div>
+  </div>
+</div>
